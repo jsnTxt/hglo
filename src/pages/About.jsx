@@ -70,7 +70,7 @@ export default function About() {
 
                 <motion.img
                     src="/about/half-circle.svg"
-                    className="absolute transform rotate-180 -bottom-5 md:-bottom-10 left-10 w-30 sm:w-50 md:left-30 md:w-50 lg:w-60 lg:left-90"
+                    className="absolute transform rotate-180 -bottom-5 md:-bottom-10 lg:-bottom-15 left-10 w-30 sm:w-50 md:left-30 md:w-50 lg:w-60 lg:left-90"
                     initial={{ scale: 0.3 }}
                     whileInView={{ scale: [0.3, 1.2, 1] }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -81,9 +81,9 @@ export default function About() {
                 <p className="text-center w-[70%] md:w-[50%] m-auto mt-10 md:text-lg xl:text-xl">
                     We are a vibrant community of students from the Global Challenges and Solutions Honors Program at the University of Maryland, College Park. As a branch of the university-wide Honors Ambassadors Program, our mission is to advocate for the Honors College experience and inspire prospective students to join our dynamic academic community.
                 </p>
-                <h3 className="text-center font-bold text-xl m-auto mt-35">What We Offer</h3>
+                <h3 className="text-center font-bold text-3xl m-auto mt-35">What We Offer</h3>
 
-                <div className="flex flex-col lg:flex-row justify-center items-center mt-20 pb-20 lg:pb-45 lg:gap-x-15 xl:gap-x-25 transform scale-95">
+                <div className="flex flex-col lg:flex-row justify-center items-center mt-20 pb-20 lg:pb-45 xl:pb-80 lg:gap-x-15 xl:gap-x-25 transform scale-95">
                     {
                         offers.map((offer, index) => (
                             index == 1 ?
