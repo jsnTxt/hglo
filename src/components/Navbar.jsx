@@ -23,7 +23,7 @@ const Navbar = () => {
             <a
               key={item}
               href={`#${item}`}
-              className="text-white font-medium transition duration-300 ease-in-out hover:text-gray-300 hover:scale-110 cursor-pointer"
+              className="text-white font-medium transition duration-300 ease-in-out hover:text-green-100 hover:scale-110 cursor-pointer"
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </a>
