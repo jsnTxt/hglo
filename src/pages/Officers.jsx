@@ -40,7 +40,7 @@ export default function Officers() {
             />
             <img
                 className="hidden md:block absolute w-40 
-                    top-[calc(24vw-170px)] left-[calc(50%-200px)]"
+                    -top-0 left-[calc(65%)]"
                 src="officers-background/gradient-ripple.svg"
             />
             <img
@@ -49,19 +49,10 @@ export default function Officers() {
                 src="officers-background/gradient-waves.svg"
             />
 
-            {/* Wave divider */}
-            <div className="absolute -top-5 sm:-top-10 md:-top-15 lg:-top-25 xl:-top-30
-                left-0 w-full overflow-hidden leading-0"
-            >
-                <img
-                    className="block w-full h-auto"
-                    src="wavy-border.svg"
-                />
-            </div>
 
             {/* Captains content */}
             <div className="pb-48">
-                <h2 className="mt-[24vw] mb-24 z-1
+                <h2 className="mt-[10vw] mb-40 z-1
                     text-3xl text-center font-bold"
                 >
                     Meet the Captains

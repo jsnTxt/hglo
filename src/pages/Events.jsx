@@ -34,13 +34,24 @@ export default function Events() {
 
   return (
     <>
+      {/* Wave divider */}
+      <div className="relative
+                left-0 w-full overflow-hidden leading-0"
+      >
+        <img
+          className="block w-full h-auto transform -scale-x-[100%]"
+          src="wavy-border-top.svg"
+        />
+      </div>
+
       {/* flex flex-col justify-center items-center bg-blue */}
       <div
-        className=" w-screen pt-40 pb-25 
+        className=" w-screen pt-20 pb-25
           flex flex-col gap-15 justify-center items-center
-          bg-[linear-gradient(white,_#CFE0D8)]"
+          bg-[linear-gradient(#F9FBFB,_#CFE0D8)]"
         id="events"
       >
+
         <div
           className="w-[70%] md:w-[50%]
             text-base md:text-lg xl:text-xl text-center"
@@ -98,6 +109,15 @@ export default function Events() {
           open={isOpen}
           onClose={() => setIsOpen(false)}
           event={selectedEvent}
+        />
+      </div>
+
+      <div className="relative
+                left-0 w-full overflow-hidden leading-0"
+      >
+        <img
+          className="block w-full h-auto transform "
+          src="wavy-border-bottom.svg"
         />
       </div>
     </>
